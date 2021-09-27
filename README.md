@@ -6,4 +6,4 @@ topics.
 ## Tech Stack
 Built using the **SvelteKit** framework. Skeleton of project generated from [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-<> TODO: Deployment Section
+<!-- TODO: Deployment Section -->
