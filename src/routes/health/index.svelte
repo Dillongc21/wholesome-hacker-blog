@@ -1,5 +1,9 @@
+<svelte:head>
+	<title>Health</title>
+</svelte:head>
+
 <script context="module">
-	const allPosts = import.meta.glob("./*.md")
+	const allPosts = import.meta.glob("./posts/*.md")
 
 	let body = []
 	for(let path in allPosts) {
