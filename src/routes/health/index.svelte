@@ -1,7 +1,3 @@
-<svelte:head>
-	<title>Health</title>
-</svelte:head>
-
 <script context="module">
 	const allPosts = import.meta.glob("./posts/*.md")
 
@@ -29,6 +25,11 @@ export const load = async() => {
 	export let posts
 </script>
 
+<svelte:head>
+	<title>Health</title>
+</svelte:head>
+
+<h2>Health Posts</h2>
 <ul>
 	{#each posts as {path,metadata}}
 		<li>

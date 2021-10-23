@@ -1,33 +1,58 @@
-<style>
-	:global(body) {
-		font-family: "Roboto Mono", Arial, sans-serif;
+<style lang="scss">
+	:global {
+		body {
+			font-family: "Roboto Mono", Arial, sans-serif;
+			background-color: #343434;
+			color: #bfbfbf;
+			margin: 0;
+		}
+		.content {
+			background-color: #303030;
+			max-width: 1250px;
+			margin: auto;
+			padding: 1em 3em;
+		}
+		a {
+			text-decoration: none;
+			color: #2fa115;
+			&:hover {
+				color: #3fcf1b;
+			}
+		}
 	}
+
 	h1, nav {
 		text-align: center;
 	}
+
 	h1 {
 		font-weight: normal;
 	}
-	nav > a{
+
+	nav > a {
 		padding-right: 30px;
 		text-decoration: none;
 		font-size: 1.25rem;
+		&:last-child {
+			padding-right: 0;
+		}
 	}
-	nav > a:last-child{
-		padding-right: 0;
-	}
+
 	@font-face {
 		font-family: "Roboto Mono";
-		src: url("../static/fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
+		src: url("/fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
 		font-style: normal;
 	}
 </style>
 
-<h1>Wholesome Hacker Blog</h1>
-<nav>
-	<a href="/">Home</a>
-	<a href="/health">Health</a>
-	<a href="/tech">Tech</a>
-</nav>
+<div class="content">
 
-<slot></slot>
+	<h1 id="title">Wholesome Hacker Blog</h1>
+	<nav>
+		<a href="/">Home</a>
+		<a href="/health">Health</a>
+		<a href="/tech">Tech</a>
+	</nav>
+
+	<slot></slot>
+</div>
