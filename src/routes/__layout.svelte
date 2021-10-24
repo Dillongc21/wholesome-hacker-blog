@@ -1,25 +1,5 @@
 <style lang="scss">
-	:global {
-		body {
-			font-family: "Roboto Mono", Arial, sans-serif;
-			background-color: #343434;
-			color: #bfbfbf;
-			margin: 0;
-		}
-		.content {
-			background-color: #303030;
-			max-width: 1250px;
-			margin: auto;
-			padding: 1em 3em;
-		}
-		a {
-			text-decoration: none;
-			color: #2fa115;
-			&:hover {
-				color: #3fcf1b;
-			}
-		}
-	}
+	@import "./global-styles.scss";
 
 	h1, nav {
 		text-align: center;
@@ -36,12 +16,6 @@
 		&:last-child {
 			padding-right: 0;
 		}
-	}
-
-	@font-face {
-		font-family: "Roboto Mono";
-		src: url("/fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
-		font-style: normal;
 	}
 </style>
 
